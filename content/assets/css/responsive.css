@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+	 @media only screen and (max-width: 991px) {
+	     #intro .servicelink {
+	         text-align: center;
+	     }
+	 }
+
+	 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	     iframe {
+	         left: 38%;
+	     }
+
+
+
+	 }
+
+	 @media only screen and (max-width: 767px) {
+	     iframe {
+	         left: 33%;
+	     }
+	     .post h3 {
+	         font-size: 22px;
+	     }
+	     h2.post-title{
+
+	         font-size: 40px!important;
+
+	     }
+
+	 }
+
+	 @media only screen and (max-width: 500px) {
+	     .post-footer .author-image {
+	         top: -60px;
+	     }
+
+	     .author-profile .author-image {
+	         margin-top: -70px;
+	     }
+	     .post-footer {
+	         padding: 5rem 0 3rem 0;
+	         text-align: center;
+	     }
+	     .post-footer .author {
+	         margin: 0 0 2rem 0;
+	         padding: 0 0 1.6rem 0;
+	         border-bottom: #EBF2F6 1px dashed;
+	     }
+
+	     .post-footer .share {
+	         position: static;
+	         width: auto;
+	     }
+	 }
+
+	 @media only screen and (max-width: 479px) {
+	     iframe {
+	         width: 80%;
+	         left: 0;
+	         height: 200px;
+	     }
+
+	     #intro .servicelink {
+	         text-align: left;
+	     }
+	     h2.post-title{
+
+	         font-size: 38px!important;
+
+	     }
+	 }
+
+
+
+
+@media only screen and (min-width: 992px) {
+	/****Ipad Landscape 1024 Container 970 ****/
+
+	.service-list{ margin-bottom:30px;}
+	.c-logo-part ul li{ margin:0px;}
+	.form{ margin:0 0 0 20px}
+	.main-nav{ display:block !important; }
+	/*.portfolioContainer{ width:800px; margin:0px auto !important; } */
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/****Ipad Portrait 768 Container 750 ****/
+	body{ font-size:13px;}
+	p{ line-height:20px ;}
+	.header h1{ font-size:46px; }
+    .header{ padding: 40px; background-position: 0px 80px;}
+    .header img { max-width: 90%; }
+	.main-nav ul li a{ padding:14px;}
+	.small-logo{ padding:0 20px;}
+	h2{ font-size:30px}
+	h6{ font-size:16px;}
+	h3{ font-size:15px;}
+	.service-list{ margin-bottom:20px; font-size:15px;}
+	.featured-work p.padding-b{ padding-bottom:15px;}
+	.main-section{ padding:30px 0;}
+	.c-logo-part ul li{ margin:0 1%; float:left; width:18%;}
+	.c-logo-part ul li a{ display:block;}
+	.c-logo-part ul li a img{ display:block;}
+	.form{ margin:0;}
+	.contact-info-box{ margin:0 ;}
+	.social-link{ margin:0;}
+	.main-nav{ display:block !important; }
+	.main-nav li a{ padding:8px 15px;}
+	/*.portfolioContainer{ width:750px; margin:0px auto !important; }
+	.Portfolio-box{ height:250px;}*/
+
+    .service-list p{ font-size:14px;}
+
+    #services-sidebar {
+        padding-top: 90px;
+        padding-left: 20px;
+        background-size: auto 520px;
+        min-height: 500px;
+    }
+    #services-sidebar i{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	/****Mobile Landscape 480 Container 100% ****/
+	body{ font-size:15px;}
+	h2{ font-size:26px;}
+	h3{ font-size:15px;}
+	h6{ font-size:16px; margin-bottom:40px;}
+	p{ line-height:18px;}
+	.service-list p{ font-size: 14px; line-height: 18px; margin-bottom: 14px;}
+    #service.main-section{ padding:20px 0 50px;}
+	.we-create li{ font-size:13px; padding:0 0 0 8px}
+	.header h1{ font-size:28px;}
+	.header{ padding:40px 0; background-position: 0px 55px;}
+    .header img { max-width: 90%; }
+	.main-section{ padding:30px 0 20px;}
+	.main-nav{ display:none; position:absolute; left:0; width:100%; top:7px; margin:0 auto; flote : none; background:#fff;}
+	.main-nav li{ display:block;}
+	.main-nav li.small-logo{ display:none;}
+	.main-nav li a{ display:block; padding:7px 32px; border-bottom:none;}
+	.main-nav li a:hover{color:#6298CE}
+	.team-leader-box{ max-width:307px; width:auto; float:none; margin:0 auto;	}
+	.team-leader-box:nth-of-type(3n){ margin:0 auto}
+	.res-nav_click{ display:block;}
+	.featured-work{ font-size:15px; margin-top:30px;}
+	.featured-box{ font-size:15px;}
+	.featured-box p{ line-height:22px; }
+	.c-logo-part ul a{ margin-bottom:5px;}
+	.main-section.team{ padding:60px 0 50px;}
+	.business-talking h2{ font-size:36px;}
+	.contact-info-box{ margin:0 0 12px 30px; font-size:16px;}
+	.contact-info-box span{ line-height:20px;}
+    .contact-info-box h3{ line-height:24px;}
+	.social-link{ margin-left:30px;}
+	.form{ margin:0 30px;}
+	.copyright{ font-size:12px;}
+	.business-talking a{ padding:10px 25px; font-size:14px;}
+	.main-section.contact{ padding:60px 0 70px}
+	.client-part-head{ font-size:20px; line-height:30px;}
+	.link{ font-size:14px; padding:10px 25px;}
+	.logo{ width:100px;}
+	.main-section.contact{ background-size:contain;}
+	.Portfolio-nav li a{ padding:5px 16px;}
+	.Portfolio-nav li{ display:block;}
+	/*.isotope-item img{ width:300px; left:50%; margin-left:-100px;}
+	.isotope-item{ width:300px; margin:0px auto;}
+	.isotope{ width:400px; margin:0px auto;}
+	.Portfolio-box{}
+	.portfolioContainer{ width:350px; margin:0px auto !important; } */
+    .client-nologo{ margin-top: 10px;}
+
+    #services-sidebar {
+        background: #000;
+		/*background-size: auto auto;*/
+        line-height: 28px;
+		min-height: auto;
+		padding-top: 30px;
+        padding-bottom: 20px;
+    }
+	#services-sidebar > div {
+		max-width: 500px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	/****Mobile Portrait 320 ****/
+	.contact-info-box{ margin-left:0px;}
+	.header{ padding:40px;}
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.c-logo-part ul li{ display:block;}
+	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box img { max-width:100%;}
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
+
+}
