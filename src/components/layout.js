@@ -19,39 +19,10 @@ class Layout extends React.Component {
 
     constructor(props) {
       super(props);
-      this.state = {
-        menu: false,
-        stickyNav: false
-      };
-      this.toggleMenu = this.toggleMenu.bind(this);
-    }
-
-      _handleWaypointEnter = () => {
-        this.setState(() => ({ stickyNav: false }))
-      }
-
-      _handleWaypointLeave = (event) => {
-        let winScroll = document.body.scrollTop || document.documentElement.scrollTop
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-        const scrolled = winScroll / height
-          console.log('scrolled is ' + scrolled)
-          if(scrolled === 0) {
-            this.setState(() => ({ stickyNav: false }))
-          }
-          else {
-            this.setState(() => ({ stickyNav: true }))
-          }
-        }
-
-    toggleMenu(){
-      this.setState({ menu: !this.state.menu })
     }
 
 
     componentDidMount() {
-      window.addEventListener('scroll', this._handleWaypointLeave);
-      //window.addEventListener('scroll', this.handleScroll);
-
       $('.main-nav li a, .servicelink').bind('click', function (event) {
             var $anchor = $(this);
             var top = ($($anchor.attr('href')).offset() || { "top": NaN }).top;
@@ -76,10 +47,6 @@ class Layout extends React.Component {
        });
 
       }
-
-    componentWillUnmount(){
-
-    }
 
   render () {
     return(

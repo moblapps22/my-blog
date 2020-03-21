@@ -88,7 +88,7 @@ body.page-template .post-title {
 
 .post p {
   margin: 20px 0;
-  font-size: 17px;
+  font-size: 15px;
   color: #888888;
 }
 
@@ -200,10 +200,11 @@ h6{
 	text-align:center;
 	margin:10px 0 12px 0;
     line-height:24px;
+  font-style: normal;  
 
 }
 p{
-	line-height:18px;
+	line-height:28px;
 	margin:0;
 }
 b{
@@ -515,7 +516,7 @@ color: #fff;
 	line-height:32px;
 	margin:10px 0 10px;
 	font-family: ''Open Sans',sans-serif';
-	font-style: italic;
+	font-style: normal;
 }
 .client{
 	padding:0;

@@ -23,14 +23,23 @@ class SiteIndex extends React.Component {
     this.setState(() => ({ stickyNav: false }))
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this._handleWaypointLeave);
+  }
+
+
   _handleWaypointLeave = (event) => {
-      this.setState(() => ({ stickyNav: true }))
-      let scrollTop = document.documentElement.scrollTop
-      console.log("scroll top is " + scrollTop);
-      if(scrollTop === 0) {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    const scrolled = winScroll / height
+      if(scrolled === 0) {
+        console.log('scrolled 123 is ' + scrolled)
         this.setState(() => ({ stickyNav: false }))
       }
-  }
+      else {
+        this.setState(() => ({ stickyNav: true }))
+      }
+    }
 
 
   render () {

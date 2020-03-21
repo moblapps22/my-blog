@@ -19,13 +19,13 @@ const BlogIndexText = ({props}) => {
     <section className="main-section" id="blogs">
         <div className="container">
           <h2>Blogs</h2>
-      <SEO title="All posts" />
+
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug} >
             <header >
-              <h6
+              <h5
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
@@ -33,7 +33,7 @@ const BlogIndexText = ({props}) => {
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug + "#article"}>
                   {title}
                 </Link>
-              </h6>
+              </h5>
               <small>{node.frontmatter.date}</small>
             </header>
             <section>
@@ -50,28 +50,3 @@ const BlogIndexText = ({props}) => {
 }
 
 export default BlogIndexText
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`

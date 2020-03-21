@@ -23,15 +23,42 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
     <article className="post tag-security tag-cloud-security tag-devops" id="article">
+
+                      <nav>
+                        <ul
+                          style={{
+                            display: `flex`,
+                            flexWrap: `wrap`,
+                            justifyContent: `space-between`,
+                            listStyle: `none`,
+                            padding: 0,
+                          }}
+                        >
+                          <li>
+                            {previous && (
+                              <Link to={previous.fields.slug + "#article"} rel="prev">
+                                ← {previous.frontmatter.title}
+                              </Link>
+                            )}
+                          </li>
+                          <li>
+                            {next && (
+                              <Link to={next.fields.slug + "#article"}   rel="next">
+                                {next.frontmatter.title} →
+                              </Link>
+                            )}
+                          </li>
+                        </ul>
+                      </nav>
+
         <header >
-          <h1
+          <h2
             style={{
               marginTop: rhythm(1),
               marginBottom: 0,
             }}
           >
-            {post.frontmatter.title}
-          </h1>
+          </h2>
           <p
             style={{
               ...scale(-1 / 5),
@@ -49,33 +76,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         />
         <footer>
-
-                <nav>
-                  <ul
-                    style={{
-                      display: `flex`,
-                      flexWrap: `wrap`,
-                      justifyContent: `space-between`,
-                      listStyle: `none`,
-                      padding: 0,
-                    }}
-                  >
-                    <li>
-                      {previous && (
-                        <Link to={previous.fields.slug + "#article"} rel="prev">
-                          ← {previous.frontmatter.title}
-                        </Link>
-                      )}
-                    </li>
-                    <li>
-                      {next && (
-                        <Link to={next.fields.slug + "#article"}   rel="next">
-                          {next.frontmatter.title} →
-                        </Link>
-                      )}
-                    </li>
-                  </ul>
-                </nav>
         </footer>
       </article>
 
