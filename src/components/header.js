@@ -15,7 +15,7 @@ class Header extends React.Component {
       <div>
       <header className="header" id="header">
         <div className="container">
-            <h1 className="animated fadeInDown delay-07s"><img src={logo} alt="Dave Stern Consulting"/>
+            <h1 className="animated fadeInDown delay-07s">Technology Consulting Services
             </h1>
             <ul className="we-create animated fadeInUp delay-1s">
                 <li>Devops Engineering</li>
