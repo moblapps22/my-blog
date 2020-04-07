@@ -10,6 +10,10 @@ import { Waypoint } from 'react-waypoint'
 import IntroText from '../components/introText'
 import ServicesText from '../components/servicesText'
 import BlogIndexText from '../components/blogIndexText'
+import ClientsText from '../components/ClientsText'
+import ProjectsText from '../components/ProjectsText'
+import AboutText from '../components/AboutText'
+import ContactText from '../components/ContactText'
 
 class SiteIndex extends React.Component {
   constructor(props){
@@ -55,7 +59,12 @@ class SiteIndex extends React.Component {
       <Nav sticky={this.state.stickyNav} />
       <IntroText/>
       <ServicesText/>
+      <ClientsText/>
+      <ProjectsText/>
+      <AboutText/>
       <BlogIndexText props = {this.props}/>
+      <ContactText/>
+
       </Layout>
     )
   }
